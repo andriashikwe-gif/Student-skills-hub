@@ -1,0 +1,57 @@
+/* GENERAL STYLING*/
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f8f9fa;
+}
+
+/* HEADINGS */
+
+h1 {
+    color: #0d6efd;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #0a58ca;
+    margin-top: 25px;
+}
+
+/* IMAGES */
+
+img {
+    transition: transform 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.03);
+}
+
+/* BUTTONS */
+
+.btn-primary {
+    transition: 0.3s;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+}
+
+/* FOOTER */
+
+footer {
+    margin-top: 50px;
+}
+
+/* NAVBAR */
+
+.navbar-brand {
+    font-size: 1.4rem;
+}
+
+/* PAGE CONTENT */
+
+.container {
+    padding-bottom: 30px;
+}
