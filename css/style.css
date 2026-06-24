@@ -4,6 +4,12 @@ body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     background-color: #f8f9fa;
+    color: black;
+
+    .dark-mode {
+    background-color: #121212;
+    color: white;
+}
 }
 
 /* HEADINGS */
@@ -69,4 +75,15 @@ footer {
 }
 .accordion-item {
     margin-bottom: 10px;
+}
+
+.dark-mode {
+    background-color: #121212;
+    color: white;
+}
+
+.dark-mode h1,
+.dark-mode h2,
+.dark-mode h3 {
+    color: #66b3ff;
 }
