@@ -55,3 +55,18 @@ footer {
 .container {
     padding-bottom: 30px;
 }
+
+.card {
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.accordion-button {
+    font-weight: bold;
+}
+.accordion-item {
+    margin-bottom: 10px;
+}
