@@ -25,3 +25,29 @@ if (document.body.classList.contains("dark-mode")) {
     darkModeBtn.classList.remove("btn-warning");
     darkModeBtn.classList.add("btn-dark");
 }
+
+const searchBox = document.getElementById("searchBox");
+
+if (searchBox) {
+
+    searchBox.addEventListener("keyup", function () {
+
+        let searchText = searchBox.value.toLowerCase();
+
+        let resources = document.querySelectorAll(".resource");
+
+        resources.forEach(function(resource) {
+
+            let text = resource.textContent.toLowerCase();
+
+            if (text.includes(searchText)) {
+                resource.style.display = "block";
+            } else {
+                resource.style.display = "none";
+            }
+
+        });
+
+    });
+
+}
