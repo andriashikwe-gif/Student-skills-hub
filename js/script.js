@@ -16,14 +16,18 @@ if (darkModeBtn) {
 
 }
 
-if (document.body.classList.contains("dark-mode")) {
-    darkModeBtn.textContent = "☀️ Light Mode";
-    darkModeBtn.classList.remove("btn-dark");
-    darkModeBtn.classList.add("btn-warning");
-} else {
-    darkModeBtn.textContent = "🌙 Dark Mode";
-    darkModeBtn.classList.remove("btn-warning");
-    darkModeBtn.classList.add("btn-dark");
+if (darkModeBtn) {
+
+    if (document.body.classList.contains("dark-mode")) {
+        darkModeBtn.textContent = "☀️ Light Mode";
+        darkModeBtn.classList.remove("btn-dark");
+        darkModeBtn.classList.add("btn-warning");
+    } else {
+        darkModeBtn.textContent = "🌙 Dark Mode";
+        darkModeBtn.classList.remove("btn-warning");
+        darkModeBtn.classList.add("btn-dark");
+    }
+
 }
 
 const searchBox = document.getElementById("searchBox");
