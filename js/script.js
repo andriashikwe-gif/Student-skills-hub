@@ -51,3 +51,38 @@ if (searchBox) {
     });
 
 }
+const contactForm = document.getElementById("contactForm");
+
+if (contactForm) {
+
+    contactForm.addEventListener("submit", function(event) {
+
+        event.preventDefault();
+
+        const name = document.getElementById("name").value.trim();
+        const email = document.getElementById("email").value.trim();
+        const subject = document.getElementById("subject").value.trim();
+        const message = document.getElementById("message").value.trim();
+
+        const successMessage = document.getElementById("successMessage");
+
+        if (name === "" || email === "" || subject === "" || message === "") {
+
+            successMessage.classList.remove("text-success");
+            successMessage.classList.add("text-danger");
+
+            successMessage.textContent = "Please fill in all the fields.";
+
+            return;
+        }
+
+        successMessage.classList.remove("text-danger");
+        successMessage.classList.add("text-success");
+
+        successMessage.textContent = "✅ Message sent successfully! We'll get back to you soon.";
+
+        contactForm.reset();
+
+    });
+
+}
