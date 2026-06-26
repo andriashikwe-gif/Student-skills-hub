@@ -70,7 +70,7 @@
 
 <!-- PAGE CONTENT -->
 <div class="container mt-5">
-    <h1>FAQ</h1>
+    <h1>Frequently Asked Questions</h1>
     <p>
     Here are some of the most common questions students ask about Student Skills Hub. If you have additional questions, feel free to contact us.
 </p>
@@ -81,48 +81,93 @@
          alt="About Student Skills Hub">
 </div
 
-<h3 class="mt-4">1. What is Student Skills Hub?</h3>
+<div class="accordion mt-4" id="faqAccordion">
 
-<p>
-    Student Skills Hub is an online learning platform that provides educational resources, practical courses, study materials, and career guidance to help students improve their academic and professional skills.
-</p>
+    <div class="accordion-item">
+        <h2 class="accordion-header">
+            <button class="accordion-button"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#faq1">
+                Are the courses free?
+            </button>
+        </h2>
 
-<h3 class="mt-4">2. Are the courses free?</h3>
+        <div id="faq1"
+             class="accordion-collapse collapse show"
+             data-bs-parent="#faqAccordion">
 
-```html
-<p>
-    Some courses and resources are available free of charge, while others may require registration or payment depending on the course content.
-</p>
+            <div class="accordion-body">
+                Some courses are free while others may require registration or enrollment fees.
+            </div>
 
-<h3 class="mt-4">3. How do I register?</h3>
+        </div>
+    </div>
 
-<p>
-    You can register by creating an account using your email address and choosing a secure password. Once registered, you can enroll in available courses.
-</p>
+    <div class="accordion-item">
+        <h2 class="accordion-header">
+            <button class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#faq2">
+                Who can join Student Skills Hub?
+            </button>
+        </h2>
 
-<h3 class="mt-4">4. Can I access the platform on my phone?</h3>
+        <div id="faq2"
+             class="accordion-collapse collapse"
+             data-bs-parent="#faqAccordion">
 
-<p>
-    Yes. Student Skills Hub is designed to work on desktops, tablets, and smartphones, allowing you to learn anytime and anywhere.
-</p>
+            <div class="accordion-body">
+                Any university or college student interested in developing practical skills can join.
+            </div>
 
-<h3 class="mt-4">5. Do I receive a certificate after completing a course?</h3>
+        </div>
+    </div>
 
-<p>
-    Selected courses offer certificates of completion. Certificate availability depends on the specific course requirements.
-</p>
+    <div class="accordion-item">
+        <h2 class="accordion-header">
+            <button class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#faq3">
+                How do I register for a course?
+            </button>
+        </h2>
 
-<h3 class="mt-4">6. How can I contact Student Skills Hub?</h3>
+        <div id="faq3"
+             class="accordion-collapse collapse"
+             data-bs-parent="#faqAccordion">
 
-<p>
-    You can reach us through the Contact page by filling out the contact form or using the email address and phone number provided.
-</p>
+            <div class="accordion-body">
+                Visit the Courses page and follow the registration instructions provided for each course.
+            </div>
 
-<h2 class="mt-5">Still Have Questions?</h2>
+        </div>
+    </div>
 
-<p>
-    If you can't find the answer you're looking for, don't hesitate to contact us. We're always happy to help you with your learning journey.
-</p>
+    <div class="accordion-item">
+        <h2 class="accordion-header">
+            <button class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#faq4">
+                Do I receive certificates?
+            </button>
+        </h2>
+
+        <div id="faq4"
+             class="accordion-collapse collapse"
+             data-bs-parent="#faqAccordion">
+
+            <div class="accordion-body">
+                Selected courses provide certificates upon successful completion.
+            </div>
+
+        </div>
+    </div>
+
+</div>
 
 </div>
 <footer class="bg-dark text-white text-center p-3 mt-5">
