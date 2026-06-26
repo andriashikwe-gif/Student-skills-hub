@@ -76,10 +76,8 @@ if (contactForm) {
             return;
         }
 
-        successMessage.classList.remove("text-danger");
-        successMessage.classList.add("text-success");
-
-        successMessage.textContent = "✅ Message sent successfully! We'll get back to you soon.";
+        successMessage.classList.remove("d-none");
+successMessage.textContent = "✅ Message sent successfully! We'll get back to you soon.";
 
         contactForm.reset();
 
